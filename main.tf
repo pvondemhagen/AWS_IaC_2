@@ -27,8 +27,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name      = "app_server"
-    yor_trace = "a988e1c8-d11e-41d6-9bab-f90b8d106654"
+
   }
 
 }
