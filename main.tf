@@ -23,11 +23,12 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
 
-   ami           = "ami-08d70e59c07c61a3a"
-   instance_type = "t2.micro"
-   
+  ami           = "ami-08d70e59c07c61a3a"
+  instance_type = "t2.micro"
+
   tags = {
-   Name = "app_server"
-   }
- 
+    Name      = "app_server"
+    yor_trace = "a988e1c8-d11e-41d6-9bab-f90b8d106654"
+  }
+
 }
