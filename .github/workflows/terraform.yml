@@ -53,7 +53,7 @@ permissions:
   pull-requests: write
   issues: write
   repository-projects: write
-  contents: read
+  contents: write
 
 jobs:
   terraform:
