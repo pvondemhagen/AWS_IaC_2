@@ -23,11 +23,19 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
 
-   ami           = "ami-08d70e59c07c61a3a"
-   instance_type = "t2.micro"
-   
+  ami           = "ami-08d70e59c07c61a3a"
+  instance_type = "t2.micro"
+
   tags = {
-   Name = var.instance_name
-   }
- 
+    Name                 = var.instance_name
+    git_commit           = "1d2a94b854949e07e4f174ebf7f33b7f5894fbb0"
+    git_file             = "main.tf"
+    git_last_modified_at = "2023-01-27 04:49:43"
+    git_last_modified_by = "pvondemhagen@yahoo.com"
+    git_modifiers        = "pvondemhagen"
+    git_org              = "pvondemhagen"
+    git_repo             = "AWS_IaC_2"
+    yor_trace            = "9754c071-d506-4237-bf07-4a6eaa4131d8"
+  }
+
 }
