@@ -18,12 +18,9 @@ terraform {
 }
 
 provider "aws" {
-  endpoints {
-    ec2 = "https://ec2-fips.us-west-2.amazonaws.com"
-    s3  = "https://s3-fips.us-west-2.amazonaws.com"
-    sts = "https://sts-fips.us-west-2.amazonaws.com"
-  }
+  region = "us-west-2"
 }
+
 
 resource "aws_instance" "app_server" {
 
